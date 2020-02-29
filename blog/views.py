@@ -1,8 +1,34 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+posts = [
+    {
+        'author': 'Julio',
+        'title': 'Blog Post 1',
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique sunt, nulla repudiandae sequi rem minus facilis, culpa molestiae beatae consectetur illum in harum voluptatem fuga reprehenderit. Exercitationem, a. Consequuntur.',
+        'date_posted': '29-02-2020'
+    },
+    {
+        'author': 'Julio',
+        'title': 'Blog Post 2',
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique sunt, nulla repudiandae sequi rem minus facilis, culpa molestiae beatae consectetur illum in harum voluptatem fuga reprehenderit. Exercitationem, a. Consequuntur.',
+        'date_posted': '29-02-2020'
+    },
+    {
+        'author': 'Julio',
+        'title': 'Blog Post 3',
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique sunt, nulla repudiandae sequi rem minus facilis, culpa molestiae beatae consectetur illum in harum voluptatem fuga reprehenderit. Exercitationem, a. Consequuntur.',
+        'date_posted': '29-02-2020'
+    }
+]
+
+# render looks inside the templates directory
 
 def home(request):
-    return HttpResponse('<h1>Blog Home</h1>')
+    context = {
+        'posts': posts
+    }
+
+    return render(request, 'blog/home.html', context)
 
 def about(request):
-    return HttpResponse('<h1>Blog About</h1>')
+    return render(request, 'blog/about.html', {'title': 'About'})
