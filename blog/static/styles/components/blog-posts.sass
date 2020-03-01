@@ -9,10 +9,16 @@
     .title
         +links($blue, $blue, $blue, $blue)
 
+    .image
+        max-width: 50px
+
     &--content, &--heading
         width: 100%
 
     &--heading
+        +flex-row
+        align-items: center
+        justify-content: space-between
         position: relative
         margin-bottom: $spacing-extra-large
 
@@ -26,5 +32,4 @@
 
         .author
             font-size: 1.5rem
-            margin-right: $spacing
             +links($green, $green, $green, $green)

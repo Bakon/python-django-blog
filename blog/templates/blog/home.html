@@ -4,8 +4,15 @@
     {% for post in posts %}
         <section class="blog-card">
             <div class="blog-card--heading">
-                <a class="author" href="#">{{ post.author }}</a>
-                <small class="text-muted">{{ post.date_posted | date:"F d, Y" }}</small>
+                <div>
+                    <a class="author" href="#">{{ post.author }}</a>
+                    <small class="text-muted ml-2 mr-2">{{ post.date_posted | date:"F d, Y" }}</small>
+                </div>
+                <img
+                    class="rounded-circle image"
+                    src="{{ post.author.profile.image.url }}"
+                    alt="author's profile picture"
+                >
             </div>
             <div class="blog-card--content">
                 <h2 class="mt-0"><a class="title" href="#">{{ post.title }}</a></h2>
