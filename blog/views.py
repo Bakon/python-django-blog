@@ -11,7 +11,6 @@ def home(request):
             'description': 'Description home page',
         }
     }
-
     return render(request, 'blog/home.html', context)
 
 
@@ -23,5 +22,4 @@ def about(request):
             'description': 'Description About page',
         }
     }
-
     return render(request, 'blog/about.html', context)
