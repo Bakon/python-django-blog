@@ -26,12 +26,12 @@
         <header class="header">
             <div class="header--inner">
                 <nav class="navigation-menu">
-                    <a href="{% url 'blog-home' %}">
+                    <a class="link" href="{% url 'blog-home' %}">
                         <img class="logo" src="{% static 'icons/snek.png' %}" alt="Snek logo">
                     </a>
                     <div class="menu-items">
-                        <a href="{% url 'blog-home' %}">Home</a>
-                        <a href="{% url 'blog-about' %}">About</a>
+                        <a class="link" href="{% url 'blog-home' %}">Home</a>
+                        <a class="link" href="{% url 'blog-about' %}">About</a>
                     </div>
                 </nav>
                 <nav class="login-menu">

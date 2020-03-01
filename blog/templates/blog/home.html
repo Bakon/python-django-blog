@@ -1,15 +1,15 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    <h1 class="green">Snek's Blog</h1>
+    <h1 class="page-title">Snek's Blog</h1>
     {% for post in posts %}
         <section class="blog-card">
-            <div class="blog-card-heading">
-                <a class="blog-card-heading--author" href="#">{{ post.author }}</a>
-                <small class="blog-card-heading--date">{{ post.date_posted|date:"F d, Y" }}</small>
+            <div class="blog-card--heading">
+                <a class="author" href="#">{{ post.author }}</a>
+                <small class="date">{{ post.date_posted | date:"F d, Y" }}</small>
             </div>
-            <div class="blog-card-content">
-                <h2 class="no--margin-top"><a class="blog-card-content--title" href="#">{{ post.title }}</a></h2>
-                <p class="blog-card-content--post">{{ post.content }}</p>
+            <div class="blog-card--content">
+                <h2 class="no--margin-top"><a class="title" href="#">{{ post.title }}</a></h2>
+                <p>{{ post.content }}</p>
             </div>
         </section>
     {% endfor %}

@@ -1,3 +1,30 @@
+@mixin flex-row($wrap: false)
+    display: flex
+    flex-flow: row nowrap
+
+    @if $wrap
+        flex-flow: row wrap
+
+
+@mixin flex-column($wrap: false)
+    display: flex
+    flex-flow: column nowrap
+
+    @if $wrap
+        flex-flow: column wrap
+
+
+@mixin flex-center($direction: 'column')
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @if $direction == 'column'
+        flex-flow: column nowrap
+    @else
+        flex-flow: row nowrap
+
+
 @mixin links($link, $visited, $hover, $active)
     color: $link
     text-decoration: none

@@ -32,13 +32,10 @@ ul
 section
     max-width: $max-view
 
-.green
-    color: $dark-blue
-
 .container
-    display: flex
-    flex-flow: column nowrap
-    align-items: center
-    justify-content: center
-    width: 100%
+    +flex-center
     padding: $spacing
+    width: 100%
+
+    > h1.page-title
+        color: $dark-blue
