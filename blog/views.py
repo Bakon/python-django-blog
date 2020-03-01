@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import Post
 
-# render looks inside the templates directory
 
 def home(request):
     context = {

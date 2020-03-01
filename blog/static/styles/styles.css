@@ -8,16 +8,16 @@
     padding-left: 0; }
   .no--padding-right {
     padding-right: 0; }
-  .no--padding--margin {
-    margin: 0; }
-    .no--padding--margin-top {
-      margin-top: 0; }
-    .no--padding--margin-bottom {
-      margin-bottom: 0; }
-    .no--padding--margin-left {
-      margin-left: 0; }
-    .no--padding--margin-right {
-      margin-right: 0; }
+.no--margin {
+  margin: 0; }
+  .no--margin-top {
+    margin-top: 0; }
+  .no--margin-bottom {
+    margin-bottom: 0; }
+  .no--margin-left {
+    margin-left: 0; }
+  .no--margin-right {
+    margin-right: 0; }
 
 .small--padding {
   padding: 0.5rem; }
@@ -114,15 +114,15 @@
       align-items: center; }
 
 @font-face {
-  font-family: Karla;
+  font-family: "Karla";
   font-display: auto;
   src: local("Karla"), url("../fonts/Karla.ttf"); }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-display: auto;
   src: local("Montserrat"), url("../fonts/Montserrat.ttf"); }
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-display: auto;
   src: local("Roboto"), url("../fonts/Roboto.ttf"); }
 * {
@@ -220,7 +220,7 @@ section {
       left: 0;
       width: 100%;
       border-bottom: 2px solid #e6e6e6;
-      bottom: -2rem; }
+      bottom: -1.5rem; }
     .blog-card--heading .author {
       font-size: 1.5rem;
       margin-right: 1rem;
