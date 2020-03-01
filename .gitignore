@@ -1,3 +1,6 @@
+# ENV variables
+env.py
+
 # OS environment
 .DS_Store
 
