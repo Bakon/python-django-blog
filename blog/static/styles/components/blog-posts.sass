@@ -6,15 +6,13 @@
     padding: $spacing-large
     margin: $spacing-large 0
 
-    &--content
-        width: 100%
-        color: $white
+    .title
+        +links($blue, $blue, $blue, $blue)
 
-        .title
-            +links($blue, $blue, $blue, $blue)
+    &--content, &--heading
+        width: 100%
 
     &--heading
-        width: 100%
         position: relative
         margin-bottom: $spacing-extra-large
 
@@ -23,13 +21,10 @@
             position: absolute
             left: 0
             width: 100%
-            border-bottom: 2px solid $snow
+            border-bottom: 1px solid $dark-snow
             bottom: -$spacing-medium
 
         .author
             font-size: 1.5rem
             margin-right: $spacing
             +links($green, $green, $green, $green)
-
-        .date
-            color: $dark-gray

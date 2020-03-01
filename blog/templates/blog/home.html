@@ -5,11 +5,11 @@
         <section class="blog-card">
             <div class="blog-card--heading">
                 <a class="author" href="#">{{ post.author }}</a>
-                <small class="date">{{ post.date_posted | date:"F d, Y" }}</small>
+                <small class="text-muted">{{ post.date_posted | date:"F d, Y" }}</small>
             </div>
             <div class="blog-card--content">
-                <h2 class="no--margin-top"><a class="title" href="#">{{ post.title }}</a></h2>
-                <p>{{ post.content }}</p>
+                <h2 class="mt-0"><a class="title" href="#">{{ post.title }}</a></h2>
+                <p class="text-white">{{ post.content }}</p>
             </div>
         </section>
     {% endfor %}
