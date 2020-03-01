@@ -7,7 +7,7 @@
                 <h2 class="username">{{ user.username }}</h2>
                 <p class="text-secondary">{{ user.email }}</p>
             </div>
-            <img class="rounded-circle" src="{{ user.profile.image.url }}">
+            <img class="rounded-circle profile-image" src="{{ user.profile.image.url }}">
         </div>
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
