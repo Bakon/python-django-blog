@@ -1,13 +1,16 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    <h1>Home</h1>
+    <h1 class="green">Snek's Blog</h1>
     {% for post in posts %}
-        <section>
-            <article>
-                <h1>{{ post.title }}</h1>
-                <p>By {{ post.author }} on {{ post.date_posted }}</p>
-                <p>{{ post.content }}</p>
-            </article>
+        <section class="blog-card">
+            <div class="blog-card-heading">
+                <a class="blog-card-heading--author" href="#">{{ post.author }}</a>
+                <small class="blog-card-heading--date">{{ post.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <div class="blog-card-content">
+                <h2 class="no--margin-top"><a class="blog-card-content--title" href="#">{{ post.title }}</a></h2>
+                <p class="blog-card-content--post">{{ post.content }}</p>
+            </div>
         </section>
     {% endfor %}
 {% endblock content %}

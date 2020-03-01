@@ -1,4 +1,6 @@
 .header
+    display: flex
+    justify-content: center
     padding: $spacing
     background: $dark
 
@@ -14,7 +16,7 @@
         flex-flow: row nowrap
         align-items: center
 
-        img
+        .logo
             max-width: $spacing * 2.5
             margin: 0 $spacing $spacing-small $spacing-small
             transform: scale(2)
@@ -23,11 +25,9 @@
             margin-left: $spacing * 1.5
 
         a
-            color: $white
+            +links($snow, $snow, $snow, $snow)
             text-decoration: none
 
             &.logo
                 font-size: 1.75rem
 
-            &:link, &:visited, &:hover, &:active
-                color: $white

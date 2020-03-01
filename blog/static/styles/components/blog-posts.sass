@@ -1,0 +1,44 @@
+.blog-card
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    width: 100%
+    margin: $spacing-large 0
+    border: 1px solid $dark-gray
+    border-radius: 10px
+    background: $dark
+
+    &-heading, &-content
+        margin: $spacing-small
+        padding: $spacing-small $spacing-large
+        width: 100%
+
+    &-heading
+        margin: $spacing-small
+        padding: $spacing-small $spacing-large
+        position: relative
+
+        &::after
+            content: ""
+            position: absolute
+            border-bottom: 2px solid $snow
+            width: 95%
+            bottom: -$spacing-small
+            left: $spacing-large
+
+        &--author
+            font-size: 1.5rem
+            margin-right: $spacing
+            text-decoration: none
+            +links($green, $green, $green, $green)
+
+        &--date
+            color: $dark-gray
+
+    &-content
+        &--title
+            +links($blue, $blue, $blue, $blue)
+
+        &--post
+            color: $white
