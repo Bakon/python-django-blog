@@ -176,8 +176,6 @@ section {
       margin: 0 2rem 0.5rem 0;
       transform: scale(2);
       font-size: 1.75rem; }
-    .header nav .link + .link {
-      margin-left: 1.5rem; }
     .header nav .link {
       color: #e6e6e6;
       text-decoration: none; }
@@ -187,6 +185,8 @@ section {
         color: #e6e6e6; }
       .header nav .link:active, .header nav .link:focus {
         color: #e6e6e6; }
+      .header nav .link + .link {
+        margin-left: 1.5rem; }
 
 .blog-card {
   display: flex;
