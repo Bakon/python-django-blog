@@ -2,13 +2,12 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'n3kgz=+a_brr4=893)i0u3*#%^x0#fr8jktp^bouh((yroe%%n'
 SECRET_KEY = os.getenv('SECRET_KEY')
-# SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://julioschilders.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', 'julioschilders.herokuapp.com']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
