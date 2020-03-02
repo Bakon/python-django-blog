@@ -9,7 +9,7 @@ SECRET_KEY = 'n3kgz=+a_brr4=893)i0u3*#%^x0#fr8jktp^bouh((yroe%%n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'https://julioschilders.herokuapp.com/']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
